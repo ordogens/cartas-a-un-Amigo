@@ -7,5 +7,9 @@ export const datos: Datos [] = [
 
     {id: 1, carta: 'As de corazones'},
     {id: 2, carta: 'As de corazones'},
+    {id: 3, carta: 'As de corazones'},
+    {id: 4, carta: 'As de corazones'},
+
+
 
 ]
