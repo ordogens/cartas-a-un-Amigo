@@ -8,6 +8,12 @@
     font-family: 'Cormorant Garamond', serif;
 }
 
+.carta{
+    font-family: 'Lora', serif;
+    color: #9e7e5b;
+
+}
+
 .azul{
     background-image: url("../assets/ChatGPTazul.png");
     box-shadow: 0px 2px 10px 5px rgba(0, 0, 0, 0.5);
