@@ -1,22 +1,27 @@
 import {datos} from "./arrays/ordogen"
-import {data} from "./arrays/Jean"
+import {data} from "./arrays/jean"
+import "./cuerpo.css"
 
 export const Cuerpo = () => {
   return (
-    <div className="w-full max-h-[93%] flex flex-now overflow-y-scroll">
-        <div className="w-1/2 h-full flex flex-col pb-4 gap-3 items-center pt-4 ">
-            <p className="text-3xl font-bold">Ordogen</p>
+    <div className="w-full max-h-[85%] flex flex-now overflow-y-scroll">
+        <div className="w-1/2 h-full flex flex-col pb-6 gap-8 items-center pt-4 ">
+            <p className="text-4xl font-bold letra">Ordogen</p>
         {datos.map((item) => (
-            <div key={item.id} className="w-100 h-80 bg-red-600 rounded-sm">
+            <div key={item.id} className="w-150 h-100 rojo rounded-sm">
+                <p className="text-[#3A2D1F] text-2xl">{item.titulo}</p>
+                <p>{item.fecha}</p>
                 <p>{item.carta}</p>
             </div>
         ))}
         
         </div>
-        <div className="w-1/2 h-full flex flex-col items-center pb-4 pt-4 gap-3 ">
-            <p className="text-3xl font-bold">Jean</p>
+        <div className="w-1/2 h-full flex flex-col items-center pb-4 pt-4 gap-8 ">
+            <p className="text-4xl font-bold letra">Jean</p>
         {data.map((item) => (
-            <div key={item.id} className="w-100 h-80 bg-blue-600 rounded-sm">
+            <div key={item.id} className="w-150 h-100 azul rounded-sm">
+                <p>{item.titulo}</p>
+                <p>{item.fecha}</p>
                 <p>{item.carta}</p>
             </div>
         ))}
