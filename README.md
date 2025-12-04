@@ -1,73 +1,132 @@
-# React + TypeScript + Vite
+# Cartas a un amigo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web que presenta una correspondencia filosófica entre dos
+autores: **Ordogen** y **Jean Pierre**, mediante un diseño
+visual inspirado en manuscritos antiguos, pergaminos y ambientes
+clásicos de estudio.
 
-Currently, two official plugins are available:
+------------------------------------------------------------------------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📘 ¿Qué es este proyecto?
 
-## React Compiler
+**Cartas a un amigo** es una interfaz interactiva donde el usuario
+puede navegar entre diferentes cartas filosóficas y ver las respuestas
+correspondientes.\
+Está diseñado para ofrecer una experiencia inmersiva, evocando el
+intercambio epistolar clásico dentro de un entorno visualmente
+atractivo.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+------------------------------------------------------------------------
 
-## Expanding the ESLint configuration
+## 🎯 Objetivo del proyecto
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+El propósito de este proyecto es:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+-   Presentar textos filosóficos de forma elegante y narrativa.
+-   Simular una correspondencia antigua entre dos pensadores.
+-   Usar componentes modernos (acordeones interactivos) con un diseño
+    temático.
+-   Crear una experiencia visual estética sin perder funcionalidad.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+------------------------------------------------------------------------
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tecnologías utilizadas
+
+Este proyecto fue construido usando:
+
+-   **React**\
+-   **Vite**\
+-   **TypeScript (TSX)**\
+-   **Tailwind CSS**
+
+Se seleccionaron estas tecnologías por su rapidez, rendimiento,
+modularidad y la facilidad que ofrecen para crear interfaces modernas y
+estilizadas en entornos web.
+
+------------------------------------------------------------------------
+
+## 📂 Estructura general del proyecto
+
+    src/
+     ├── components/
+     │    ├── Accordion.tsx
+     │    ├── cuerpo.css
+     │    ├── Cuerpo.tsx
+     │    ├── header.css
+     │    └── Header.tsx
+     ├── data/
+     │    ├── jean.ts
+     │    └── ordogen.ts
+     ├── assets/
+     ├── app.css
+     ├── App.tsx
+     ├── main.tsx
+     └── index.css
+
+------------------------------------------------------------------------
+
+## 🚀 Cómo ejecutar el proyecto
+
+Sigue estos pasos:
+
+### 1️⃣ Clonar el repositorio
+
+``` bash
+git clone https://github.com/ordogens/cartas-a-un-Amigo.git
+cd cartas-a-un-Amigo
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2️⃣ Instalar dependencias
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+``` bash
+pnpm install
+# o
+npm install
+# o
+yarn install
 ```
+
+### 3️⃣ Iniciar el servidor de desarrollo
+
+``` bash
+pnpm dev
+# o
+npm run dev
+# o
+yarn dev
+```
+
+### 4️⃣ Abrir en el navegador
+
+Generalmente Vite corre en:
+
+    http://localhost:5173
+
+------------------------------------------------------------------------
+
+## 🖼️ Diseño y estilo
+
+El diseño está basado en:
+
+-   Texturas de pergamino y papel antiguo.
+-   Tarjetas en tonos aterciopelados.
+-   Fuentes serif que evocan manuscritos clásicos.
+-   Efectos de acordeón en ambas columnas para imitar el flujo
+    epistolar.
+
+Tailwind CSS permitió desarrollar un estilo altamente personalizado sin
+necesidad de escribir CSS manual excesivo.
+
+------------------------------------------------------------------------
+
+## 📄 Licencia
+
+Este proyecto es de uso personal y educativo.\
+Puede extenderse, modificarse y adaptarse libremente según tus
+necesidades.
+
+------------------------------------------------------------------------
+
+## ✨ Autor
+
+Proyecto realizado por **Ordogen Arcila García**.
