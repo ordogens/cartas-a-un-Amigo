@@ -1,0 +1,5 @@
+.app{
+    background-image: url("./src/assets/ChatGPT.png");
+    background-size: cover;
+    background-position: center;
+}
