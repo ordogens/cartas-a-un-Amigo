@@ -65,6 +65,11 @@ estilizadas en entornos web.
 
 ------------------------------------------------------------------------
 
+## Cómo se ve el proyecto
+Debido a que el proyecto está en fase de desarrollo, esta es la versión actual del mismo (sujeto a cambios al finalizar).
+<img width="1879" height="1039" alt="image" src="https://github.com/user-attachments/assets/ad92bed1-59fd-4e2b-a9bc-e2658963e0d8" />
+
+
 ## 🚀 Cómo ejecutar el proyecto
 
 Sigue estos pasos:
